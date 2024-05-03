@@ -2,15 +2,15 @@
 <rss version="2.0">
     <channel>
         <title>ZoyagErの博客</title>
-        <link>http://github.com/zoyager</link>
+        <link>http://example.com</link>
         <description></description>
         <language>en</language>
         <pubDate>Fri, 03 May 2024 08:54:49 +0800</pubDate>
         <lastBuildDate>Fri, 03 May 2024 08:54:49 +0800</lastBuildDate>
         <item>
-            <guid isPermalink="true">http://github.com/zoyager/2024/05/03/python%E8%AE%B0%E5%BD%95/</guid>
+            <guid isPermalink="true">http://example.com/2024/05/03/python%E8%AE%B0%E5%BD%95/</guid>
             <title>&#39;python记录&#39;</title>
-            <link>http://github.com/zoyager/2024/05/03/python%E8%AE%B0%E5%BD%95/</link>
+            <link>http://example.com/2024/05/03/python%E8%AE%B0%E5%BD%95/</link>
             <pubDate>Fri, 03 May 2024 08:54:49 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;这是一篇 python 学习过程中的练习的习题～&lt;/p&gt;
 &lt;p&gt;其中含有代码和相关内容的补充～&lt;/p&gt;

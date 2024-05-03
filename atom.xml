@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://github.com/zoyager</id>
+    <id>http://example.com</id>
     <title>ZoyagErの博客</title>
-    <link href="http://github.com/zoyager" />
+    <link href="http://example.com" />
     <updated>2024-05-03T00:54:49.000Z</updated>
     <entry>
-        <id>http://github.com/zoyager/2024/05/03/python%E8%AE%B0%E5%BD%95/</id>
+        <id>http://example.com/2024/05/03/python%E8%AE%B0%E5%BD%95/</id>
         <title>&#39;python记录&#39;</title>
-        <link rel="alternate" href="http://github.com/zoyager/2024/05/03/python%E8%AE%B0%E5%BD%95/"/>
+        <link rel="alternate" href="http://example.com/2024/05/03/python%E8%AE%B0%E5%BD%95/"/>
         <content type="html">&lt;p&gt;这是一篇 python 学习过程中的练习的习题～&lt;/p&gt;
 &lt;p&gt;其中含有代码和相关内容的补充～&lt;/p&gt;
 &lt;h2 id=&#34;数据传输到文件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据传输到文件&#34;&gt;#&lt;/a&gt; 数据传输到文件&lt;/h2&gt;
