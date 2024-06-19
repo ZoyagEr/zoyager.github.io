@@ -7,6 +7,16 @@
     "home_page_url": "https://zoyager.github.io",
     "items": [
         {
+            "id": "https://zoyager.github.io/2024/06/19/MATLAB%E5%9F%BA%E7%A1%80/",
+            "url": "https://zoyager.github.io/2024/06/19/MATLAB%E5%9F%BA%E7%A1%80/",
+            "title": "MATLAB相关",
+            "date_published": "2024-06-19T10:24:23.000Z",
+            "content_html": "<p>这是一篇关于 MATLAB 的博文～</p>\n<h3 id=\"数据类型\"><a class=\"anchor\" href=\"#数据类型\">#</a> 数据类型</h3>\n<p><figure class=\"highlight matlab\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br><span class=\"line\">5</span><br><span class=\"line\">6</span><br><span class=\"line\">7</span><br><span class=\"line\">8</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">有符号整形 int8,int16</span><br><span class=\"line\">无符号整型 uint</span><br><span class=\"line\">单精度浮点型 single</span><br><span class=\"line\">双精度浮点型 double</span><br><span class=\"line\">逻辑型 logical</span><br><span class=\"line\">字符串型 char</span><br><span class=\"line\">结构体型 struct</span><br><span class=\"line\">句柄型 </span><br></pre></td></tr></table></figure></p>\n<h3 id=\"数值类型\"><a class=\"anchor\" href=\"#数值类型\">#</a> 数值类型</h3>\n<p><strong>整形</strong>： 有符号（int8，int16，int32，int64；所占字节分别为一二三四个字节）和无符号（同理）</p>\n<p><strong>取整函数</strong>：</p>\n<p><figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">round 向最接近的整数取整</span><br><span class=\"line\">fix 向0取整</span><br><span class=\"line\">floor 不大于该数的最接近整数</span><br><span class=\"line\">ceil 不小于该数的最接近整数</span><br></pre></td></tr></table></figure></p>\n<p><strong>浮点数</strong>：单精度浮点数（single）和双精度浮点型（double）</p>\n<p><strong>复数</strong>：complex () 创建复数，通过 i 或 j 表示虚部</p>\n<p><figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br><span class=\"line\">5</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">相关函数</span><br><span class=\"line\">real求实部</span><br><span class=\"line\">imag求虚部</span><br><span class=\"line\">abs求模</span><br><span class=\"line\">conj求共轭复数</span><br></pre></td></tr></table></figure></p>\n<h3 id=\"数据显示格式\"><a class=\"anchor\" href=\"#数据显示格式\">#</a> 数据显示格式</h3>\n<p>format () 函数，改变后一直有效</p>\n<p><img data-src=\"https://cdn.jsdelivr.net/gh/ZoyagEr/blogimage@main/img/202406192013424.png\" alt=\"image-20240619201308335\" /></p>\n",
+            "tags": [
+                "MATLAB"
+            ]
+        },
+        {
             "id": "https://zoyager.github.io/2024/05/13/TEA%E5%8F%8A%E5%85%B6%E8%A1%8D%E7%94%9F%E7%BC%96%E7%A0%81/",
             "url": "https://zoyager.github.io/2024/05/13/TEA%E5%8F%8A%E5%85%B6%E8%A1%8D%E7%94%9F%E7%BC%96%E7%A0%81/",
             "title": "'TEA及其衍生编码'",

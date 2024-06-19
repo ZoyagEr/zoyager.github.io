@@ -10,9 +10,30 @@
         </author>
         <description>欢迎来到zoyager的博客，这里是生活的点点滴滴~</description>
         <language>zh-CN</language>
-        <pubDate>Mon, 13 May 2024 21:27:56 +0800</pubDate>
-        <lastBuildDate>Mon, 13 May 2024 21:27:56 +0800</lastBuildDate>
+        <pubDate>Wed, 19 Jun 2024 18:24:23 +0800</pubDate>
+        <lastBuildDate>Wed, 19 Jun 2024 18:24:23 +0800</lastBuildDate>
         <category term="笔记，CTF" />
+        <item>
+            <guid isPermalink="true">https://zoyager.github.io/2024/06/19/MATLAB%E5%9F%BA%E7%A1%80/</guid>
+            <title>MATLAB相关</title>
+            <link>https://zoyager.github.io/2024/06/19/MATLAB%E5%9F%BA%E7%A1%80/</link>
+            <category term="MATLAB" scheme="https://zoyager.github.io/categories/MATLAB/" />
+            <pubDate>Wed, 19 Jun 2024 18:24:23 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;这是一篇关于 MATLAB 的博文～&lt;/p&gt;
+&lt;h3 id=&#34;数据类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据类型&#34;&gt;#&lt;/a&gt; 数据类型&lt;/h3&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight matlab&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;有符号整形 int8,int16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;无符号整型 uint&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;单精度浮点型 single&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;双精度浮点型 double&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;逻辑型 logical&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;字符串型 char&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;结构体型 struct&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;句柄型 &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;数值类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数值类型&#34;&gt;#&lt;/a&gt; 数值类型&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;整形&lt;/strong&gt;： 有符号（int8，int16，int32，int64；所占字节分别为一二三四个字节）和无符号（同理）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;取整函数&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;round 向最接近的整数取整&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;fix 向0取整&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;floor 不大于该数的最接近整数&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ceil 不小于该数的最接近整数&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;浮点数&lt;/strong&gt;：单精度浮点数（single）和双精度浮点型（double）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;复数&lt;/strong&gt;：complex () 创建复数，通过 i 或 j 表示虚部&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;相关函数&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;real求实部&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;imag求虚部&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;abs求模&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;conj求共轭复数&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;数据显示格式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据显示格式&#34;&gt;#&lt;/a&gt; 数据显示格式&lt;/h3&gt;
+&lt;p&gt;format () 函数，改变后一直有效&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/ZoyagEr/blogimage@main/img/202406192013424.png&#34; alt=&#34;image-20240619201308335&#34; /&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://zoyager.github.io/2024/05/13/TEA%E5%8F%8A%E5%85%B6%E8%A1%8D%E7%94%9F%E7%BC%96%E7%A0%81/</guid>
             <title>&#39;TEA及其衍生编码&#39;</title>
