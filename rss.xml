@@ -10,9 +10,39 @@
         </author>
         <description>欢迎来到zoyager的博客，这里是生活的点点滴滴~</description>
         <language>zh-CN</language>
-        <pubDate>Wed, 19 Jun 2024 18:24:23 +0800</pubDate>
-        <lastBuildDate>Wed, 19 Jun 2024 18:24:23 +0800</lastBuildDate>
+        <pubDate>Wed, 31 Jul 2024 15:25:46 +0800</pubDate>
+        <lastBuildDate>Wed, 31 Jul 2024 15:25:46 +0800</lastBuildDate>
         <category term="笔记，CTF" />
+        <item>
+            <guid isPermalink="true">https://zoyager.github.io/2024/07/31/Jupyter%E5%92%8Cnumpy%E5%BA%93/</guid>
+            <title>Jupyter和numpy库</title>
+            <link>https://zoyager.github.io/2024/07/31/Jupyter%E5%92%8Cnumpy%E5%BA%93/</link>
+            <category term="PYTHON" scheme="https://zoyager.github.io/tags/PYTHON/" />
+            <pubDate>Wed, 31 Jul 2024 15:25:46 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;Jupyter 是一个强大的 Python 编程工具。编程语言交互环境，可以在浏览器中，也可以 VsCode 插件中运行。jupyter 中可以用多种形式创建笔记，它有以下的特显：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;块状交互特性&lt;/li&gt;
+&lt;li&gt;支持 markdown 模式单元添加笔记、添加说明和注释&lt;/li&gt;
+&lt;li&gt;数据分析和可视化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;1jupyter的环境配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1jupyter的环境配置&#34;&gt;#&lt;/a&gt; 1.Jupyter 的环境配置&lt;/h2&gt;
+&lt;p&gt;首先装好 python 环境，在 python 所对应的 Scripts 文件下打开 cmd，输入以下命令&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;pip install numpy matplotlib&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pip install pandas scipy scikit-learn scikit-image&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pip install opencv-python&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pip install jupyter&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;pip install jupyterlab&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;完成之后在 cmd 中输入  jupyter-lab  出现以下页面&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/ZoyagEr/blogimage@main/img/202407311540192.png&#34; alt=&#34;image-20240731154042104&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;点开 python3 输入以下内容&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; numpy &lt;span class=&#34;keyword&#34;&gt;as&lt;/span&gt; np&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; cv2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; matplotlib&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;如果不报错说明成功，如果报错【No module named ‘cv2‘】则更新 opencv-python 库&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight py&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;pip install --upgrade opencv-python&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;numpy库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#numpy库&#34;&gt;#&lt;/a&gt; Numpy 库&lt;/h2&gt;
+&lt;p&gt;在 Jupyter 编辑器中进行简单的数学计算&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/ZoyagEr/blogimage@main/img/202407311558689.png&#34; alt=&#34;image-20240731155825595&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/ZoyagEr/blogimage@main/img/202407311559616.png&#34; alt=&#34;image-20240731155915523&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/ZoyagEr/blogimage@main/img/202407311559274.png&#34; alt=&#34;image-20240731155952189&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/ZoyagEr/blogimage@main/img/202407311600779.png&#34; alt=&#34;image-20240731160028709&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/ZoyagEr/blogimage@main/img/202407311600994.png&#34; alt=&#34;image-20240731160049922&#34; /&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://zoyager.github.io/2024/06/19/MATLAB%E5%9F%BA%E7%A1%80/</guid>
             <title>MATLAB相关</title>
